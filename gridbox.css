@@ -1,6 +1,7 @@
 /* Table Grid */
 .weight-grid,
-.fluid-grid {
+.fluid-grid,
+.wrap-grid {
     display: table;
     width: 100%;
     height: 100%;
@@ -12,13 +13,14 @@
     vertical-align: top;
 }
 
-/* Fluid Grid */
+
+/* Fluid columns sizing */
 .fluid-grid > .col-fit {
     width: 1px;
 }
 
 
-/* Weight grid */
+/* Weight columns sizing */
 .weight-grid {
     table-layout: fixed;
 }
@@ -65,5 +67,97 @@
 
 .weight-grid > .col\/6 {
     width: 2px;
+}
+
+/* Wrap columns sizing */
+.wrap-grid {
+    word-spacing: -2em;
+}
+
+.wrap-grid > * {
+    display: inline-block;
+    vertical-align: top;
+    word-spacing: normal;
+    width: 100%;
+}
+
+.wrap-grid > .col-1\/2 {
+    width: 50%;
+}
+
+.wrap-grid > .col-2\/2 {
+    width: 100%;
+}
+
+.wrap-grid > .col-1\/3 {
+    width: 33.3333%;
+}
+
+.wrap-grid > .col-2\/3 {
+    width: 66.6667%;
+}
+
+.wrap-grid > .col-3\/3 {
+    width: 100%;
+}
+
+.wrap-grid > .col-1\/4 {
+    width: 25%;
+}
+
+.wrap-grid > .col-2\/4 {
+    width: 50%;
+}
+
+.wrap-grid > .col-3\/4 {
+    width: 75%;
+}
+
+.wrap-grid > .col-4\/4 {
+    width: 100%;
+}
+
+.wrap-grid > .col-1\/5 {
+    width: 20%;
+}
+
+.wrap-grid > .col-2\/5 {
+    width: 40%;
+}
+
+.wrap-grid > .col-3\/5 {
+    width: 60%;
+}
+
+.wrap-grid > .col-4\/5 {
+    width: 80%;
+}
+
+.wrap-grid > .col-5\/5 {
+    width: 100%;
+}
+
+.wrap-grid > .col-1\/6 {
+    width: 16.6667%;
+}
+
+.wrap-grid > .col-2\/6 {
+    width: 33.3333%;
+}
+
+.wrap-grid > .col-3\/6 {
+    width: 50%;
+}
+
+.wrap-grid > .col-4\/6 {
+    width: 66.6667%;
+}
+
+.wrap-grid > .col-5\/6 {
+    width: 83.3333%;
+}
+
+.wrap-grid > .col-6\/6 {
+    width: 100%;
 }
 
