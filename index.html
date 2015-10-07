@@ -4,70 +4,75 @@
 	<meta charset="utf-8">
 	<title>Gridbox</title>
 
+	<link rel="stylesheet" type="text/css" href="demo/normalize.css">
+	<link rel="stylesheet" type="text/css" href="demo/typebase.css">
+	<link rel="stylesheet" type="text/css" href="demo/demo.css">
 	<link rel="stylesheet" type="text/css" href="gridbox.css">
-	<style>
-		* {
-			box-sizing: border-box;
-		}
-		ul {
-			padding: 0;
-		}
-		li {
-			text-align: center;
-			background: #FFD9D9;
-			background: rgba(255, 0, 0, 0.15);
-		}
-		li:nth-child(odd) {
-			background: #FFB2B2;
-			background: rgba(255, 0, 0, 0.3);
-		}
-	</style>
 </head>
 
 <body>
-	<h1>gridbox.css</h1>
-	<p>A CSS toolbox of handy grids.</p>
+	<div class="container">
+		<h1>
+			gridbox.css
+			<iframe class="gh-star" src="https://ghbtns.com/github-btn.html?user=tzi&repo=gridbox.css&type=star&count=true&size=large"></iframe>
+		</h1>
+		<p>A CSS toolbox of handy grids.</p>
 
-	<h2>Fluid grid</h2>
-	<ul class="fluid-grid">
-		<li>The second cell is </li>
-		<li class="col-fit">fitted,</li>
-		<li>the other cells</li>
-		<li>have a size proportionnal</li>
-		<li>to</li>
-		<li>their content</li>
-	</ul>
+		<h2>Wrap grid</h2>
+		<p>The <strong>wrap grid</strong> is a multi-lines grid, used to size every cell according to the grid width.</p>
+		<ul class="wrap-grid">
+			<li class="col-1/2">1/2</li>
+			<li class="col-1/2">1/2</li>
+			<li class="col-1/3">1/3</li>
+			<li class="col-2/3">2/3</li>
+			<li class="col-1/4">1/4</li>
+			<li class="col-3/4">3/4</li>
+			<li class="col-1/5">1/5</li>
+			<li class="col-4/5">4/5</li>
+			<li class="col-1/6">1/6</li>
+			<li class="col-5/6">5/6</li>
+		</ul>
 
-	<h2>Weight grid</h2>
-	<ul class="weight-grid">
-		<li>1</li>
-		<li class="col/2">1/2</li>
-		<li class="col/3">1/3</li>
-		<li class="col/4">1/4</li>
-		<li class="col/5">1/5</li>
-		<li class="col/6">1/6</li>
-	</ul>
-	<ul class="weight-grid">
-		<li>1</li>
-		<li class="col*2">x2</li>
-		<li class="col*3">x3</li>
-		<li class="col*4">x4</li>
-		<li class="col*5">x5</li>
-		<li class="col*6">x6</li>
-	</ul>
+		<h2>Weight grid</h2>
+		<p>The <strong>weight grid</strong> is a one-line grid, used to size a cell according to its weight compared to the others.</p>
+		<ul class="weight-grid">
+			<li>1</li>
+			<li class="col-1/2">1/2</li>
+			<li class="col-1/3">1/3</li>
+			<li class="col-1/4">1/4</li>
+			<li class="col-1/5">1/5</li>
+			<li class="col-1/6">1/6</li>
+		</ul>
+		<ul class="weight-grid">
+			<li>1</li>
+			<li class="col-2">x2</li>
+			<li class="col-3">x3</li>
+			<li class="col-4">x4</li>
+			<li class="col-5">x5</li>
+			<li class="col-6">x6</li>
+		</ul>
 
-	<h2>Wrap grid</h2>
-	<ul class="wrap-grid">
-		<li class="col-1/2">1/2</li>
-		<li class="col-1/2">1/2</li>
-		<li class="col-1/3">1/3</li>
-		<li class="col-2/3">2/3</li>
-		<li class="col-1/4">1/4</li>
-		<li class="col-3/4">3/4</li>
-		<li class="col-1/5">1/5</li>
-		<li class="col-4/5">4/5</li>
-		<li class="col-1/6">1/6</li>
-		<li class="col-5/6">5/6</li>
-	</ul>
+		<h2>Fluid grid</h2>
+		<p>The <strong>fluid grid</strong> is a one-line grid, used to size a cell according to its content.</p>
+		<ul class="fluid-grid">
+			<li>Every cell</li>
+			<li>has a size proportional</li>
+			<li>to</li>
+			<li>its content</li>
+		</ul>
+		<ul class="fluid-grid">
+			<li>Specific cells,</li>
+			<li class="col-fit">like this one,</li>
+			<li>could have a size that exactly match</li>
+			<li>their content</li>
+		</ul>
+
+		<a href="https://github.com/tzi/gridbox.css">
+			<img class="gh-ribbon"
+				 src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67"
+				 alt="Fork me on GitHub"
+				 data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"/>
+		</a>
+	</div>
 </body>
 </html>

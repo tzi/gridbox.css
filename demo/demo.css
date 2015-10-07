@@ -1,0 +1,45 @@
+/* RESET */
+body {
+    padding-bottom: 3em;
+    background: white linear-gradient(to bottom, #E8EFFF, white 150px) repeat-x;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+/* DEMO */
+ul {
+    padding: 0;
+}
+li {
+    text-align: center;
+    background: #FFD9D9;
+    background: rgba(255, 0, 0, 0.15);
+}
+li:nth-child(odd) {
+    background: #FFB2B2;
+    background: rgba(255, 0, 0, 0.3);
+}
+
+/* GITHUB RIBBON */
+.gh-ribbon {
+    position: absolute;
+    top: 0; right: 0; border: 0;
+}
+.gh-star {
+    display: inline-block;
+    width: 160px;
+    height: 30px;
+    border: 0;
+    overflow: hidden;
+    vertical-align: -0.05em;
+}
