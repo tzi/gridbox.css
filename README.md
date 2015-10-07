@@ -1,7 +1,7 @@
 gridbox.css
 ===============
 
-A CSS toolbox of handy grids.
+A CSS toolbox of handy grids with IE8+ support.
 
 
 How to Contribute
