@@ -1,0 +1,24 @@
+{
+  "name": "gridbox.css",
+  "version": "1.0.0",
+  "description": "A CSS toolbox of handy grids",
+  "main": "build/gridbox.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzi/gridbox.css.git"
+  },
+  "keywords": [
+    "css",
+    "grid",
+    "media"
+  ],
+  "author": "Thomas ZILLIOX (http://tzi.fr)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tzi/gridbox.css/issues"
+  },
+  "homepage": "https://github.com/tzi/gridbox.css#readme"
+}
