@@ -1,0 +1,22 @@
+/* Wrap grid
+/---------------*/
+
+@import "../mixin/table-grid";
+
+.wrap-grid {
+  @include table-grid;
+  letter-spacing: -2em;
+
+  > * {
+    display: inline-block;
+    letter-spacing: normal;
+  }
+
+  @for $unit from 2 through 6 {
+    @for $size from 1 through ($unit - 1) {
+      .col-#{$size}\/#{$unit} {
+        width: (100% * $size / $unit);
+      }
+    }
+  }
+}

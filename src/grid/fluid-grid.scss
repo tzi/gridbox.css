@@ -1,0 +1,19 @@
+/* Fluid grid
+/---------------*/
+
+@import "../mixin/table-grid";
+
+.fluid-grid {
+  @include table-grid;
+
+  > * {
+    display: table-cell;
+    width: auto;
+  }
+
+  > .col-media,
+  > .col-fit {
+    width: 1px;
+    white-space: nowrap;
+  }
+}
