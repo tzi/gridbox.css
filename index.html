@@ -19,9 +19,12 @@
 		<p>A CSS toolbox of handy grids.</p>
 
 		<h2>Wrap grid</h2>
-		<p>The <strong>wrap grid</strong> is a multi-lines grid, used to size every cell according to the grid width.</p>
+		<p>
+			Size every cell according to the grid width.<br>
+			The elements automatically wrap to another line, if there is not enough place left.
+		</p>
 		<ul class="wrap-grid">
-			<li class="col-1/2">1/2</li>
+			<li class="col-1/2">1/2 </li>
 			<li class="col-1/2">1/2</li>
 			<li class="col-1/3">1/3</li>
 			<li class="col-2/3">2/3</li>
@@ -34,14 +37,26 @@
 		</ul>
 
 		<h2>Weight grid</h2>
-		<p>The <strong>weight grid</strong> is a one-line grid, used to size a cell according to its weight compared to the others.</p>
+		<p>
+			The <strong>weight grid</strong> is a one-line grid.<br>
+			Without configuration, it allows you to share a width into equal-width columns.
+		</p>
 		<ul class="weight-grid">
-			<li>1</li>
-			<li class="col-1/2">1/2</li>
-			<li class="col-1/3">1/3</li>
-			<li class="col-1/4">1/4</li>
-			<li class="col-1/5">1/5</li>
-			<li class="col-1/6">1/6</li>
+			<li>Cell 1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>or more</li>
+		</ul>
+		<p>You also can distribute the width according to a weight for each cell.</p>
+		<ul class="weight-grid">
+			<li>Weight x1</li>
+			<li class="col-1/2">x1/2</li>
+			<li class="col-1/3">x1/3</li>
+			<li class="col-1/4">x1/4</li>
+			<li class="col-1/5">x1/5</li>
+			<li class="col-1/6">x1/6</li>
 		</ul>
 		<ul class="weight-grid">
 			<li>1</li>
@@ -53,18 +68,24 @@
 		</ul>
 
 		<h2>Fluid grid</h2>
-		<p>The <strong>fluid grid</strong> is a one-line grid, used to size a cell according to its content.</p>
+		<p>
+			The <strong>fluid grid</strong> is also a one-line grid.<br>
+			Without configuration, it distributes the width automatically according to the place that every cell need.
+		</p>
 		<ul class="fluid-grid">
 			<li>Every cell</li>
 			<li>has a size proportional</li>
 			<li>to</li>
 			<li>its content</li>
 		</ul>
+		<p>You can use it to create <strong>media object pattern</strong>, because the cells could be sized to fit its content.</p>
 		<ul class="fluid-grid">
-			<li>Specific cells,</li>
-			<li class="col-fit">like this one,</li>
-			<li>could have a size that exactly match</li>
-			<li>their content</li>
+			<li class="col-fit">A media</li>
+			<li>The rest of the width</li>
+		</ul>
+		<ul class="fluid-grid">
+			<li>The rest of the width</li>
+			<li class="col-fit">A media</li>
 		</ul>
 
 		<a href="https://github.com/tzi/gridbox.css">
